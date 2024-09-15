@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QDataViewerClass</class>
+ <widget class="QMainWindow" name="QDataViewerClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>912</width>
+    <height>588</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>QDataViewer</string>
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>912</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>工程</string>
+    </property>
+    <addaction name="actionsaveProject"/>
+    <addaction name="actionloadProject"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>图层</string>
+    </property>
+    <widget class="QMenu" name="menuaddLayer">
+     <property name="title">
+      <string>添加图层</string>
+     </property>
+     <addaction name="actionaddVectorLayer"/>
+     <addaction name="actionaddRasterLayer"/>
+    </widget>
+    <addaction name="menuaddLayer"/>
+    <addaction name="actionremoveLayer"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QDockWidget" name="layerList">
+   <property name="minimumSize">
+    <size>
+     <width>220</width>
+     <height>42</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>220</width>
+     <height>524287</height>
+    </size>
+   </property>
+   <property name="windowTitle">
+    <string>图层</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents"/>
+  </widget>
+  <action name="actionsaveProject">
+   <property name="text">
+    <string>保存工程</string>
+   </property>
+  </action>
+  <action name="actionloadProject">
+   <property name="text">
+    <string>打开工程</string>
+   </property>
+  </action>
+  <action name="actionaddVectorLayer">
+   <property name="text">
+    <string>添加矢量图层</string>
+   </property>
+  </action>
+  <action name="actionaddRasterLayer">
+   <property name="text">
+    <string>添加栅格图层</string>
+   </property>
+  </action>
+  <action name="actionremoveLayer">
+   <property name="text">
+    <string>移除图层</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="QDataViewer.qrc"/>
+ </resources>
+ <connections/>
+</ui>

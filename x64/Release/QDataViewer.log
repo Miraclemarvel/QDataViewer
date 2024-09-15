@@ -1,0 +1,15 @@
+﻿  Reading Qt configuration (D:/Qt/5.14.2/msvc2017_64/bin/qmake)
+  uic QDataViewer.ui
+  rcc QDataViewer.qrc
+  moc QDataViewer.h
+   RCC: Warning: No resources in 'F:\code\GIS\Practice\p1\QDataViewer\QDataViewer\QDataViewer.qrc'.
+  QDataViewer.cpp
+  main.cpp
+F:\code\GIS\Practice\p1\QDataViewer\QDataViewer\QDataViewer.cpp(7,10): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
+  qrc_QDataViewer.cpp
+  moc_QDataViewer.cpp
+  正在生成代码
+  Previous IPDB not found, fall back to full compilation.
+  All 133 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  已完成代码的生成
+  QDataViewer.vcxproj -> F:\code\GIS\Practice\p1\QDataViewer\x64\Release\QDataViewer.exe
